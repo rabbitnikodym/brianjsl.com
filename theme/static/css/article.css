@@ -1,0 +1,40 @@
+#articleContent {
+    width: 70%;
+    font-family: "Roboto",sans-serif;
+}
+
+#articleContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#titleContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#title {
+    width: 70%;
+    font-family: "Roboto", sans-serif;
+}
+
+#blogTitle {
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+#blogSubtitle {
+    font-style: normal;
+    margin: 0;
+    font-weight: 100;
+}
+
+img {
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.imgside {
+    display: flex;
+}

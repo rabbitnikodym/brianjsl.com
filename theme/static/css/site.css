@@ -1,0 +1,87 @@
+:root {
+  --bg: #070707;
+  --text: #e8e6e1;
+  --muted: #8f8c86;
+  --rule: rgba(232, 230, 225, 0.14);
+  --link: #f2f0eb;
+}
+
+* { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; }
+
+body {
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(ellipse at 50% 30%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.55) 100%),
+    url("../images/marble.svg");
+  background-size: cover, cover;
+  background-position: center, center;
+  background-attachment: fixed, fixed;
+  color: var(--text);
+  font-family: "Jost", "Futura", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 14vh 24px 10vh;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 1.9rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  margin: 0 0 1.2rem;
+  line-height: 1.3;
+}
+
+h1 a { color: inherit; text-decoration: none; }
+
+.bio {
+  color: var(--text);
+  margin: 0 0 3.5rem;
+}
+
+section { margin: 0 0 2.6rem; }
+
+h2 {
+  font-weight: 400;
+  font-size: 0.78rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 0.9rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+ul { list-style: none; margin: 0; padding: 0; }
+
+li { margin: 0 0 0.5rem; }
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(242, 240, 235, 0.3);
+  transition: border-color 0.2s ease;
+}
+
+a:hover { border-bottom-color: var(--link); }
+
+.title-caps {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 520px) {
+  main { padding-top: 9vh; }
+  h1 { font-size: 1.45rem; letter-spacing: 0.24em; }
+}
