@@ -1,8 +1,6 @@
 :root {
-  --bg: #070707;
   --text: #e8e6e1;
   --muted: #8f8c86;
-  --rule: rgba(232, 230, 225, 0.14);
   --link: #f2f0eb;
 }
 
@@ -11,13 +9,7 @@
 html, body { margin: 0; padding: 0; }
 
 body {
-  background-color: var(--bg);
-  background-image:
-    radial-gradient(ellipse at 50% 30%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.55) 100%),
-    url("../images/marble.svg");
-  background-size: cover, cover;
-  background-position: center, center;
-  background-attachment: fixed, fixed;
+  background: #000;
   color: var(--text);
   font-family: "Jost", "Futura", "Helvetica Neue", Arial, sans-serif;
   font-weight: 300;
@@ -58,8 +50,6 @@ h2 {
   text-transform: uppercase;
   color: var(--muted);
   margin: 0 0 0.9rem;
-  padding-bottom: 0.6rem;
-  border-bottom: 1px solid var(--rule);
 }
 
 ul { list-style: none; margin: 0; padding: 0; }
